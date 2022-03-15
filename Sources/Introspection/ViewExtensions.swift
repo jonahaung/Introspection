@@ -39,7 +39,7 @@ extension View {
                 }
                 
                 // Search in siblings
-                return Introspect.previousSibling(containing: UINavigationController.self, from: introspectionViewController)
+                return Introspection.previousSibling(containing: UINavigationController.self, from: introspectionViewController)
             },
             customize: customize
         ))
@@ -56,7 +56,7 @@ extension View {
                     }
                     
                     // Search in siblings
-                    return Introspect.previousSibling(containing: UISplitViewController.self, from: introspectionViewController)
+                    return Introspection.previousSibling(containing: UISplitViewController.self, from: introspectionViewController)
                 },
                 customize: customize
             ))
@@ -81,7 +81,7 @@ extension View {
                 }
                 
                 // Search in siblings
-                return Introspect.previousSibling(ofType: UITabBarController.self, from: introspectionViewController)
+                return Introspection.previousSibling(ofType: UITabBarController.self, from: introspectionViewController)
             },
             customize: customize
         ))
