@@ -35,13 +35,7 @@ Install
 ### SwiftPM
 
 ```
-https://github.com/siteline/SwiftUI-Introspect.git
-```
-
-### Cocoapods
-
-```
-pod 'Introspect'
+https://github.com/jonahaung/Introspection
 ```
 
 Introspection
@@ -69,7 +63,7 @@ ColorPicker | UIColorWell | NSColorWell | `.introspectColorWell()`
 TextEditor | UITextView | NSTextView | `.introspectTextView()`
 
 
-**Missing an element?** Please [create an issue](https://github.com/timbersoftware/SwiftUI-Introspect/issues). As a temporary solution, you can [implement your own selector](#implement-your-own-selector).
+**Missing an element?** Please [create an issue](https://github.com/jonahaung/Introspection/issues). As a temporary solution, you can [implement your own selector](#implement-your-own-selector).
 
 ### Cannot implement
 
@@ -133,7 +127,7 @@ TextField("Text Field", text: $textFieldValue)
 Implement your own selector
 ---------------------------
 
-**Missing an element?** Please [create an issue](https://github.com/timbersoftware/SwiftUI-Introspect/issues).
+**Missing an element?** Please [create an issue](https://github.com/jonahaung/Introspection/issues).
 
 In case Introspect doesn't support the SwiftUI element that you're looking for, you can implement your own selector. For example, to look for a `UITextField`:
 
@@ -153,7 +147,7 @@ extension View {
 }
 ```
 
-You can use any of the following [methods](https://github.com/timbersoftware/SwiftUI-Introspect/blob/master/Introspect/Introspect.swift#L3-L71) to inspect the hierarchy:
+You can use any of the following [methods](https://github.com/jonahaung/Introspection/blob/master/Introspect/Introspect.swift#L3-L71) to inspect the hierarchy:
 
  - `Introspect.findChild(ofType:in:)`
  - `Introspect.findChildUsingFrame(ofType:in:from:)`
@@ -187,17 +181,3 @@ $ git push origin --tags
 ```
 $ bundle exec pod trunk push .
 ```
-
-
-<!-- References -->
-[CircleCI_Status]: https://circleci.com/gh/siteline/SwiftUI-Introspect.svg?style=svg&circle-token=6f995f204d4d417d31f79e7257f6e1ecf430ae07
-
-[CircleCI_URL]: https://circleci.com/gh/siteline/SwiftUI-Introspect
-
-[GithubCI_Status]: https://github.com/siteline/swiftui-introspect/actions/workflows/build-and-test.yml/badge.svg?branch=master
-
-[GithubCI_URL]: https://github.com/siteline/SwiftUI-Introspect/actions/workflows/build-and-test.yml
-
-[Siteline_Badge]: https://badgen.net/badge/Built%20by/Siteline/blue?icon=https://uploads-ssl.webflow.com/5f4513afbbfc64c4777fcccf/5f525b122370d681879e170e_siteline-icon.svg
-
-[Quintschaf_Badge]: https://badgen.net/badge/Maintained%20by/Quintschaf/cyan?icon=https://quintschaf.com/assets/logo.svg
