@@ -3,8 +3,6 @@
 Introspect for SwiftUI
 ======================
 
-[![CircleCI_Status]][CircleCI_URL]&nbsp;&nbsp;[![GithubCI_Status]][GithubCI_URL] [![Siteline_Badge]](https://siteline.com) [![Quintschaf_Badge]](https://quintschaf.com)
-
 > Introspect allows you to get the underlying UIKit or AppKit element of a SwiftUI view.
 
 For instance, with Introspect you can access `UITableView` to modify separators, or `UINavigationController` to customize the tab bar.
