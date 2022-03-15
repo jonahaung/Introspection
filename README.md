@@ -145,7 +145,7 @@ extension View {
 }
 ```
 
-You can use any of the following [methods](https://github.com/jonahaung/Introspection/blob/master/Introspect/Introspect.swift#L3-L71) to inspect the hierarchy:
+You can use any of the following methods to inspect the hierarchy:
 
  - `Introspect.findChild(ofType:in:)`
  - `Introspect.findChildUsingFrame(ofType:in:from:)`
